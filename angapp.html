@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My First Angular app</title>
+	<script type="text/javascript" src="https://code.angularjs.org/1.5.5/angular.min.js"></script>
+	<script type="text/javascript" src="https://code.angularjs.org/1.5.5/angular-route.min.js"></script>
+	<script type="text/javascript" src="angapp.js"></script>
+	
+</head>
+<body>
+	<div ng-app="angularapp" ng-controller="appController">
+		<div>
+			<a ng-if="userstatus" href="#/">Home</a> 
+			<a ng-if="!userstatus"href="#/loginpage">Login</a> 
+			<a ng-if="!userstatus"href="#/signup">Signup</a>
+			<a ng-if="userstatus"href="#/profile">Profile</a> 
+			<a ng-if="userstatus"href="#/messages">Messages</a> 
+			<a ng-if="userstatus"href="#/logout">Logout</a>	
+		</div>
+		<div ng-view=""></div>
+	</div>
+
+
+</body>
+</html>
+

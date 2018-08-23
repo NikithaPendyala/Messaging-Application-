@@ -1,0 +1,16 @@
+<h1>Please Fillout</h1>
+<div>
+	Username:<input type="text" ng-model="username" placeholder="username"> <br> <br>
+	Password:<input type="text" ng-model="password" placeholder="password"> <br> <br>
+	Email:<input type="text" ng-model="email"  placeholder="abc@gmail.com"> <br> <br>
+	UserType:<select name="type" ng-model="utype">
+    <option value="Admin">Admin</option>
+    <option value="Manager">Manager</option>
+    <option value="Consultant">Consultant</option>
+  	</select><br><br>
+  	Gender:<input type="radio" name="gender" value="male" ng-model="gender"> Male<br>
+	<input type="radio" name="gender" value="female" ng-model="gender"> Female<br>
+	<input type="radio" name="gender" value="other" ng-model="gender"> Other
+	Location:<input type="text" ng-model="username" placeholder="username" ng-model="Location"> <br> <br>
+	<input type="button" ng-click="submit()" value="Submit"> <br> <br>
+</div>

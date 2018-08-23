@@ -1,0 +1,24 @@
+<!-- {{message1}} -->
+
+<table border=1 ng-if="message1.length" >
+	<th>Recepient</th>
+	<th>recipient_img</th>
+	<th>sender</th>
+	<th>sender_img</th>
+	<th>title</th>
+	<th>description</th>
+	<th>created_at</th>
+	<th>important</th>
+	<tr ng-repeat="item in message1 track by $index">
+		<td>{{item.recipient}}</td>
+		<td><img ng-src="{{item.recipient_img}}" width="50"/></td>
+		<td>{{item.sender}}</td>
+		<td><img ng-src="{{item.sender_img}}" width ="50"</td>
+		<td>{{item.title}}</td>
+		<td ng-click="openmsg(item)">{{item.description}}</td>
+		<td>{{item.created_at}}</td>
+		<td>{{item.important}}</td>
+		<td><a href="#/messages/{{$index}}">View Details</a></td>
+	</tr>
+</table></br></br>
+
